@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SiteCraft</title>
+  <meta name="description" content="SiteCraft">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header container">
+    <div class="brand typing">SiteCraft IT</div>
+    <nav class="nav">
+      <a href="rabota.html">Работы</a>
+      <a href="uslugi.html">Услуги</a>
+      <a href="#process">Процесс</a>
+      <a href="#pricing">Цены</a>
+      <a href="#faq">FAQ</a>
+      <a href="politic.html">Политика</a>
+      <a href="#reviews">Отзывы</a>
+      <a class="cta" href="#contact">Связаться</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Всплывающее окно -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <button class="popup-close">&times;</button>
+    <h2>Хотите сайт для вашего бизнеса?</h2>
+    <p>Оставьте заявку, и я пришлю 2–3 примера под вашу нишу.</p>
+     <form class="contact-form" action="https://formspree.io/f/movnvbvz" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="phone" placeholder="Телефон">
+    <textarea name="message" placeholder="Ваше сообщение" rows="4" required></textarea>
+    <button type="submit" class="btn primary">Отправить заявку</button>
+    </form>
+        <h2>Продолжая пользоваться сайтом, Вы принимаете <a href="politic.html">Политику конфиденциальности</a></h2>
+  </div>
+</div>
+
+
+
+    <section class="hero container">
+      <h1>SiteCraft. <span class="accent">Сайты</span> для вашего бизнеса</h1>
+      <p>Быстро, современно, красиво. Чистый HTML+CSS, адаптивный дизайн.</p>
+      <a class="btn primary" href="#pricing">Посмотреть цены</a>
+    </section>
+
+    <section id="work" class="section container">
+      <h2>Работы</h2>
+       <div class="price-card"><div class="brand typing">SiteCraft IT</div>  <ul>
+        <li>Свой мессенджер WhoMe</li>
+        <li>Разработка мессенджера Sub</li>
+        <li>2 сайта(1 на Tilda)</li>
+      </ul></div>
+    </section>
+
+    <section id="projects" class="section container">
+  <h2>Мои проекты</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="Снимок экрана 2025-08-28 101032.png" alt="Проект 1">
+      <h3>Проект 1</h3>
+      <p>Мессенджер Sub</p>
+    </div>
+
+    <!-- Добавляй столько проектов, сколько нужно -->
+  </div>
+</section>
+
+<!-- Лайтбокс -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" src="">
+  <p class="lightbox-caption"></p>
+</div>
+
+    <section id="services" class="section container">
+      <h2>Услуги</h2>
+      <div class="price-card">      <ul>
+        <li class="tooltip">Покупка домена, помощь с подключением хостинга, SiteCraftService - поддержка 18/5
+    <span class="tooltiptext">Домены в зоне .ru/.рф</span>
+        <li class="tooltip">Сайт визитка за 7 дней
+    <span class="tooltiptext">Сделаем красиво и быстро!</span>
+      </ul></div>
+    </section>
+
+    <section id="process" class="section container">
+      <h2>Процесс</h2>
+      <div class="price-card">      <ol>
+        <li>Обсуждение и бриф</li>
+        <li>Прототип</li>
+        <li>Вёрстка</li>
+        <li>Публикация</li>
+      </ol></div>
+    </section>
+
+    <section id="pricing" class="section container">
+      <h2>Цены</h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Старт</h3>
+          <p class="price">от 3000 ₽ </p>
+          1 страница, домен .ru, всплывающие окна, форма заявки
+        </div>
+        <div class="price-card fire-border">
+          <h3>Бизнес</h3>
+          <p class="price">от 8000 ₽ </p>
+          до 10 страниц, домен .рф/.ru, всплывающие окна, форма заявки(.com оплачивается отдельно)
+        </div>
+        <a href="#privacy">Цены могут отличаться</a>
+      </div>
+    </section>
+
+
+
+  <section id="faq" class="section container">
+  <h2>Частые вопросы</h2>
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Сколько времени занимает разработка сайта?</span>
+      <button class="faq-toggle">&#9656;</button>
+    </div>
+    <div class="faq-answer">
+      Обычно 5–7 дней, зависит от сложности проекта.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Кто оплачивает домен и хостинг?</span>
+      <button class="faq-toggle">&#9656;</button>
+    </div>
+    <div class="faq-answer">
+      Обычно клиент, но могу включить в смету при необходимости.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Можно ли внести правки после запуска?</span>
+      <button class="faq-toggle">&#9656;</button>
+    </div>
+    <div class="faq-answer">
+      Да, предусмотрено 1–2 круга бесплатных правок.
+    </div>
+  </div>
+</section>
+
+
+    <section id="reviews" class="section container">
+  <h2>Отзывы клиентов</h2>
+  <div class="reviews-slider">
+    <div class="review-card active">
+      <p>"Сделал сайт быстро и качественно. Все просто и красиво!"</p>
+      <span>- Иван П., барбершоп</span>
+    </div>
+    <div class="review-card">
+      <p>"Отличная работа, цена разумная, всё подключил сам."</p>
+      <span>- Анна С., кофейня</span>
+    </div>
+    <div class="review-card">
+      <p>"Рекомендую! Быстро откликнулся и сделал все правки."</p>
+      <span>- Сергей К., юрист</span>
+    </div>
+    <button class="prev">&lt;</button>
+    <button class="next">&gt;</button>
+  </div>
+</section>
+
+<section id="timer" class="section container">
+  <h2>Специальное предложение!</h2>
+  <p>Акция действует до конца недели:</p>
+  <div id="countdown" class="countdown">
+    <span id="days">00</span>д
+    <span id="hours">00</span>ч
+    <span id="minutes">00</span>м
+    <span id="seconds">00</span>с
+  </div>
+</section>
+
+
+    <section id="privacy" class="section container">
+      <h2>Политика конфиденциальности</h2>
+      <div class="price-card"><p>Мы уважаем ваши данные. Контактная информация, указанная на сайте, используется исключительно для связи по вашему запросу и не передаётся третьим лицам.<br>
+      Формы заявок передаются через сервис <a href="https://formspree.io">formspree </a>и не передается третьим лицам.</p></div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Связаться</h2>
+      <div class="price-card">      <p>Напишите в Telegram или на email.</p>
+      <a href="https://t.me/sitecraftcompany" class="btn">Telegram</a>
+      <a href="mailto:razrabsites@gmail.com" class="btn ghost">Email</a></div>
+    </section>
+
+    <section id="order" class="section container">
+  <h2>Оставьте заявку</h2>
+  <form class="contact-form" action="https://formspree.io/f/movnvbvz" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="phone" placeholder="Телефон">
+    <textarea name="message" placeholder="Ваше сообщение" rows="4" required></textarea>
+    <button type="submit" class="btn primary">Отправить заявку</button>
+  </form>
+</section>
+  </main>
+
+
+  <footer class="site-footer container">
+    <p>© <span id="y"></span> SiteCraft.  <a href="politic.html">Все права защищены.</a> © <span id="y"></span> FreeDom Company.  <a href="politic.html">Все права защищены.</a></a></p>
+  </footer>
+
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+  <script>
+const slides = document.querySelectorAll('.review-card');
+let current = 0;
+document.querySelector('.next').addEventListener('click', () => {
+  slides[current].classList.remove('active');
+  current = (current + 1) % slides.length;
+  slides[current].classList.add('active');
+});
+document.querySelector('.prev').addEventListener('click', () => {
+  slides[current].classList.remove('active');
+  current = (current - 1 + slides.length) % slides.length;
+  slides[current].classList.add('active');
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("popup");
+  const closeBtn = document.querySelector(".popup-close");
+
+  // Появление через 7 секунд
+  setTimeout(() => {
+    popup.classList.add("active");
+  }, 7000);
+
+  // Закрытие
+  closeBtn.addEventListener("click", () => {
+    popup.classList.remove("active");
+  });
+
+  // Закрытие при клике вне окна
+  popup.addEventListener("click", (e) => {
+    if(e.target === popup){
+      popup.classList.remove("active");
+    }
+  });
+});
+</script>
+
+<script>
+const projectCards = document.querySelectorAll('.project-card');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.querySelector('.lightbox-img');
+const lightboxCaption = document.querySelector('.lightbox-caption');
+const closeBtn = document.querySelector('.lightbox .close');
+
+projectCards.forEach(card => {
+  card.addEventListener('click', () => {
+    const img = card.querySelector('img').src;
+    const caption = card.querySelector('p').textContent;
+    lightboxImg.src = img;
+    lightboxCaption.textContent = caption;
+    lightbox.style.display = 'flex';
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', (e) => {
+  if(e.target === lightbox) lightbox.style.display = 'none';
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const tgWidget = document.getElementById("tg-widget");
+  const closeBtn = document.querySelector(".tg-close");
+
+  // Появление через 5 секунд
+  setTimeout(() => {
+    tgWidget.classList.add("show");
+  }, 30000);
+
+  // Закрытие кнопки
+  closeBtn.addEventListener("click", () => {
+    tgWidget.classList.remove("show");
+  });
+});
+</script>
+
+<script>
+function startCountdown(endDate){
+  const daysEl = document.getElementById('days');
+  const hoursEl = document.getElementById('hours');
+  const minutesEl = document.getElementById('minutes');
+  const secondsEl = document.getElementById('seconds');
+
+  function updateTimer(){
+    const now = new Date();
+    const diff = endDate - now;
+    if(diff <= 0){
+      daysEl.textContent = hoursEl.textContent = minutesEl.textContent = secondsEl.textContent = '00';
+      clearInterval(timerInterval);
+      return;
+    }
+    const d = Math.floor(diff / (1000*60*60*24));
+    const h = Math.floor((diff / (1000*60*60)) % 24);
+    const m = Math.floor((diff / (1000*60)) % 60);
+    const s = Math.floor((diff / 1000) % 60);
+
+    daysEl.textContent = String(d).padStart(2,'0');
+    hoursEl.textContent = String(h).padStart(2,'0');
+    minutesEl.textContent = String(m).padStart(2,'0');
+    secondsEl.textContent = String(s).padStart(2,'0');
+  }
+
+  updateTimer();
+  const timerInterval = setInterval(updateTimer, 1000);
+}
+
+// Пример: таймер до конца недели (следующего воскресенья 23:59)
+const nextSunday = new Date();
+nextSunday.setDate(nextSunday.getDate() + (7 - nextSunday.getDay()));
+nextSunday.setHours(23,59,59,999);
+
+startCountdown(nextSunday);
+</script>
+
+<script>
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+  const toggle = item.querySelector('.faq-toggle');
+  toggle.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+</script>
+
+<!-- Фиксированная кнопка Telegram -->
+<div id="tg-widget" class="tg-widget">
+  <a href="https://t.me/sitecraftcompany" target="_blank" class="tg-link">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="tg-icon">
+    Возник вопрос? Напишите в Telegram
+  </a>
+  <button class="tg-close">&times;</button>
+</div>
+
+<a href="#order" class="cta-fixed">Заказать сайт</a>
+
+</body>
+</html>
